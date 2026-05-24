@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Program — EcoNusa</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-transparent navbar-econusa fixed-top">
+    <div class="container" style="max-width:1280px">
+      <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+        <div class="logo-icon"><i data-lucide="leaf" style="width:20px;height:20px"></i></div>
+        EcoNusa
+      </a>
+      <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="mainNav">
+        <ul class="navbar-nav align-items-lg-center gap-1 me-3">
+          <li class="nav-item"><a class="nav-link" href="index.html">Beranda</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">Tentang</a></li>
+          <li class="nav-item"><a class="nav-link active" href="programs.html">Program</a></li>
+          <li class="nav-item"><a class="nav-link" href="news.html">Berita</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Kontak</a></li>
+        </ul>
+        <a href="contact.html" class="btn btn-brand btn-sm px-3">Donasi</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero-section hero-page-section">
+    <div class="hero-bg">
+      <img src="img/hero-program.jpg" alt="Program EcoNusa">
+    </div>
+    <div class="container" style="max-width:1280px;position:relative;z-index:1">
+      <div class="hero-content">
+        <div class="hero-label">Program Kami</div>
+        <h1>Aksi Nyata untuk<br><span class="text-gradient">Alam Indonesia</span></h1>
+        <p class="text-muted-custom mt-3" style="font-size:1.1rem;max-width:540px">Enam program strategis yang dirancang untuk memberikan dampak nyata bagi kelestarian alam dan kesejahteraan masyarakat di seluruh wilayah Indonesia.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROGRAMS -->
+  <section class="py-5">
+    <div class="container py-5" style="max-width:1280px">
+
+      <!-- Filter -->
+      <div class="d-flex gap-2 flex-wrap justify-content-center mb-5 filter-tabs-wrapper fade-in">
+        <button class="filter-tab active" data-filter="all">Semua</button>
+        <button class="filter-tab" data-filter="hutan">Hutan</button>
+        <button class="filter-tab" data-filter="laut">Laut</button>
+        <button class="filter-tab" data-filter="sosial">Sosial</button>
+        <button class="filter-tab" data-filter="iklim">Iklim</button>
+      </div>
+
+      <div class="row g-4">
+        <!-- Hutan Lestari -->
+        <div class="col-md-6 col-lg-4 fade-in" data-category="hutan">
+          <div class="program-card">
+            <div class="program-icon"><i data-lucide="trees" style="width:24px;height:24px"></i></div>
+            <h4 style="font-family:var(--font-body);font-weight:500;font-size:1.1rem;margin-bottom:0.75rem">Hutan Lestari</h4>
+            <p class="text-muted-custom mb-2" style="font-size:0.9rem">Perlindungan dan restorasi hutan tropis di seluruh Indonesia melalui patroli hutan, penanaman pohon, dan pencegahan deforestasi.</p>
+            <div class="d-flex gap-1 flex-wrap mb-2">
+              <span class="card-tag-static">Sumatera</span>
+              <span class="card-tag-static">Kalimantan</span>
+              <span class="card-tag-static">Papua</span>
+            </div>
+            <a href="programs/program-hutan-lestari.html" class="card-link-custom mt-2">Detail Program <i data-lucide="arrow-right" style="width:14px;height:14px"></i></a>
+          </div>
+        </div>
+
+        <!-- Laut Kita -->
+        <div class="col-md-6 col-lg-4 fade-in fade-in-delay-1" data-category="laut">
+          <div class="program-card">
+            <div class="program-icon"><i data-lucide="waves" style="width:24px;height:24px"></i></div>
+            <h4 style="font-family:var(--font-body);font-weight:500;font-size:1.1rem;margin-bottom:0.75rem">Laut Kita</h4>
+            <p class="text-muted-custom mb-2" style="font-size:0.9rem">Konservasi ekosistem laut, terumbu karang, padang lamun, dan mangrove. Pembentukan kawasan konservasi perairan berbasis masyarakat.</p>
+            <div class="d-flex gap-1 flex-wrap mb-2">
+              <span class="card-tag-static">Maluku</span>
+              <span class="card-tag-static">Papua</span>
+              <span class="card-tag-static">NTT</span>
+            </div>
+            <a href="programs/program-laut-kita.html" class="card-link-custom mt-2">Detail Program <i data-lucide="arrow-right" style="width:14px;height:14px"></i></a>
+          </div>
+        </div>
+
+        <!-- Masyarakat Adat -->
+        <div class="col-md-6 col-lg-4 fade-in fade-in-delay-2" data-category="sosial">
+          <div class="program-card">
+            <div class="program-icon"><i data-lucide="users" style="width:24px;height:24px"></i></div>
+            <h4 style="font-family:var(--font-body);font-weight:500;font-size:1.1rem;margin-bottom:0.75rem">Masyarakat Adat</h4>
+            <p class="text-muted-custom mb-2" style="font-size:0.9rem">Advokasi hak-hak masyarakat adat atas tanah ulayat, perlindungan pengetahuan tradisional, dan pemberdayaan ekonomi lokal.</p>
+            <div class="d-flex gap-1 flex-wrap mb-2">
+              <span class="card-tag-static">Kalimantan</span>
+              <span class="card-tag-static">Sulawesi</span>
+              <span class="card-tag-static">Papua</span>
+            </div>
+            <a href="programs/program-masyarakat-adat.html" class="card-link-custom mt-2">Detail Program <i data-lucide="arrow-right" style="width:14px;height:14px"></i></a>
+          </div>
+        </div>
+
+        <!-- Iklim & Energi -->
+        <div class="col-md-6 col-lg-4 fade-in" data-category="iklim">
+          <div class="program-card">
+            <div class="program-icon"><i data-lucide="sun" style="width:24px;height:24px"></i></div>
+            <h4 style="font-family:var(--font-body);font-weight:500;font-size:1.1rem;margin-bottom:0.75rem">Iklim & Energi</h4>
+            <p class="text-muted-custom mb-2" style="font-size:0.9rem">Kampanye transisi energi bersih, advokasi kebijakan iklim, dan pendampingan komunitas untuk adaptasi perubahan iklim.</p>
+            <div class="d-flex gap-1 flex-wrap mb-2">
+              <span class="card-tag-static">Jawa</span>
+              <span class="card-tag-static">Bali</span>
+              <span class="card-tag-static">Nasional</span>
+            </div>
+            <a href="programs/program-iklim-energi.html" class="card-link-custom mt-2">Detail Program <i data-lucide="arrow-right" style="width:14px;height:14px"></i></a>
+          </div>
+        </div>
+
+        <!-- Pangan Berkelanjutan -->
+        <div class="col-md-6 col-lg-4 fade-in fade-in-delay-1" data-category="sosial">
+          <div class="program-card">
+            <div class="program-icon"><i data-lucide="wheat" style="width:24px;height:24px"></i></div>
+            <h4 style="font-family:var(--font-body);font-weight:500;font-size:1.1rem;margin-bottom:0.75rem">Pangan Berkelanjutan</h4>
+            <p class="text-muted-custom mb-2" style="font-size:0.9rem">Mendukung kedaulatan pangan berbasis lokal, pertanian ekologis, dan sistem pangan yang adil dan berkelanjutan.</p>
+            <div class="d-flex gap-1 flex-wrap mb-2">
+              <span class="card-tag-static">NTT</span>
+              <span class="card-tag-static">Sulawesi</span>
+              <span class="card-tag-static">Sumatera</span>
+            </div>
+            <a href="programs/program-pangan-berkelanjutan.html" class="card-link-custom mt-2">Detail Program <i data-lucide="arrow-right" style="width:14px;height:14px"></i></a>
+          </div>
+        </div>
+
+        <!-- Edukasi & Gerakan -->
+        <div class="col-md-6 col-lg-4 fade-in fade-in-delay-2" data-category="sosial">
+          <div class="program-card">
+            <div class="program-icon"><i data-lucide="book-open" style="width:24px;height:24px"></i></div>
+            <h4 style="font-family:var(--font-body);font-weight:500;font-size:1.1rem;margin-bottom:0.75rem">Edukasi & Gerakan</h4>
+            <p class="text-muted-custom mb-2" style="font-size:0.9rem">Membangun kesadaran dan gerakan masyarakat sipil melalui pendidikan lingkungan, kampanye publik, dan pelatihan pemuda.</p>
+            <div class="d-flex gap-1 flex-wrap mb-2">
+              <span class="card-tag-static">34 Provinsi</span>
+              <span class="card-tag-static">Online</span>
+            </div>
+            <a href="programs/program-edukasi-gerakan.html" class="card-link-custom mt-2">Detail Program <i data-lucide="arrow-right" style="width:14px;height:14px"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DAMPAK PER PROGRAM -->
+  <section class="bg-dark-custom py-5">
+    <div class="container py-5" style="max-width:1280px">
+      <div class="text-center mb-5 fade-in" style="max-width:640px;margin:0 auto 3rem">
+        <div class="section-label justify-content-center">Capaian Program</div>
+        <h2 class="mb-3">Dampak Nyata di Lapangan</h2>
+      </div>
+      <div class="row g-4 text-center">
+        <div class="col-6 col-lg-3 fade-in">
+          <div class="stat-number" data-count="850000">0</div>
+          <div class="text-muted-custom mt-2" style="font-size:0.85rem">Pohon Ditanam</div>
+        </div>
+        <div class="col-6 col-lg-3 fade-in fade-in-delay-1">
+          <div class="stat-number" data-count="45">0</div>
+          <div class="text-muted-custom mt-2" style="font-size:0.85rem">Kawasan Konservasi</div>
+        </div>
+        <div class="col-6 col-lg-3 fade-in fade-in-delay-2">
+          <div class="stat-number" data-count="120">0</div>
+          <div class="text-muted-custom mt-2" style="font-size:0.85rem">Desa Adat Didampingi</div>
+        </div>
+        <div class="col-6 col-lg-3 fade-in fade-in-delay-3">
+          <div class="stat-number" data-count="350">0</div>
+          <div class="text-muted-custom mt-2" style="font-size:0.85rem">Advokasi Kebijakan</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section bg-dark-custom py-5 text-center" style="background-color:var(--bg-secondary)">
+    <div class="container py-5" style="max-width:1280px;position:relative;z-index:1">
+      <div class="fade-in">
+        <div class="section-label justify-content-center">Ikut Terlibat</div>
+        <h2 class="mb-3">Jadilah Bagian dari Solusi</h2>
+        <p class="text-muted-custom mx-auto mb-4" style="max-width:540px">Bergabunglah sebagai relawan, donatur, atau mitra kolaborasi untuk memperluas dampak program kami.</p>
+        <div class="d-flex gap-3 justify-content-center flex-wrap">
+          <a href="contact.html" class="btn btn-brand btn-lg">Donasi Sekarang</a>
+          <a href="contact.html" class="btn btn-outline-light-custom btn-lg">Jadi Relawan</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer-econusa pt-5 pb-3">
+    <div class="container" style="max-width:1280px">
+      <div class="row g-4 mb-5">
+        <div class="col-lg-4">
+          <div class="d-flex align-items-center gap-2 mb-3">
+            <div class="logo-icon"><i data-lucide="leaf" style="width:20px;height:20px"></i></div>
+            <span style="font-family:var(--font-heading);font-size:1.5rem;font-weight:600;color:#fff">EcoNusa</span>
+          </div>
+          <p class="text-muted-custom" style="font-size:0.9rem;max-width:300px">Organisasi nirlaba untuk konservasi alam, pemberdayaan masyarakat adat, dan pembangunan berkelanjutan di seluruh Indonesia.</p>
+          <div class="d-flex gap-2 mt-3">
+            <a href="https://instagram.com/econusa" class="footer-social-link"><i data-lucide="instagram" style="width:16px;height:16px"></i></a>
+            <a href="https://twitter.com/econusa" class="footer-social-link"><i data-lucide="twitter" style="width:16px;height:16px"></i></a>
+            <a href="https://youtube.com/econusa" class="footer-social-link"><i data-lucide="youtube" style="width:16px;height:16px"></i></a>
+            <a href="https://facebook.com/econusa" class="footer-social-link"><i data-lucide="facebook" style="width:16px;height:16px"></i></a>
+          </div>
+        </div>
+        <div class="col-6 col-lg-2">
+          <div class="footer-heading">Navigasi</div>
+          <a href="index.html" class="footer-link">Beranda</a>
+          <a href="about.html" class="footer-link">Tentang</a>
+          <a href="programs.html" class="footer-link">Program</a>
+          <a href="news.html" class="footer-link">Berita</a>
+          <a href="contact.html" class="footer-link">Kontak</a>
+        </div>
+        <div class="col-6 col-lg-3">
+          <div class="footer-heading">Program</div>
+          <a href="programs.html" class="footer-link">Hutan Lestari</a>
+          <a href="programs.html" class="footer-link">Laut Kita</a>
+          <a href="programs.html" class="footer-link">Masyarakat Adat</a>
+          <a href="programs.html" class="footer-link">Iklim & Energi</a>
+          <a href="programs.html" class="footer-link">Pangan Berkelanjutan</a>
+        </div>
+        <div class="col-lg-3">
+          <div class="footer-heading">Kontak</div>
+          <a href="#" class="footer-link">info@econusa.or.id</a>
+          <a href="#" class="footer-link">+62 21 1234 5678</a>
+          <a href="#" class="footer-link">Jakarta, Indonesia</a>
+        </div>
+      </div>
+      <div class="footer-bottom d-flex justify-content-between align-items-center py-3" style="font-size:0.8rem;color:#9CA3AF">
+        <span>&copy; 2024 EcoNusa. Seluruh hak cipta dilindungi.</span>
+        <span class="d-none d-md-inline">Untuk Indonesia Lestari</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
